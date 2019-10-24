@@ -50,3 +50,44 @@
 .button-red {
   background: rgb(202, 60, 60); /* this is a maroon */
 }
+
+form > div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 10px 5px;
+}
+
+form > div > label {
+  font-weight: 700;
+  margin-right: 10px;
+  min-width: 150px;
+  text-align: right;
+  padding: 6px 9px;
+}
+
+form > div > div {
+  flex: 1;
+  max-width: 500px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column;
+  position: relative;
+}
+
+form > div > div > * {
+  flex: 1;
+  font-size: 16px;
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+}
+
+form > div > div > span {
+  border: none;
+  font-weight: 700;
+  color: #700;
+}

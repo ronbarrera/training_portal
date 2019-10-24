@@ -14,8 +14,12 @@ class EventList extends Component {
       return (
         <div className="card" key={event._id}>
           <div className="card-content">
-            <span className="card-title">{event.name}</span>
-            <p>{event.description}</p>
+            <div>Training Name: {event.name}</div>
+            <div>Description: {event.description}</div>
+            <div>Department: {event.department}</div>
+            <div>Duration: {event.duration}</div>
+            <div>Date: {event.date}</div>
+            <div>Meeting Room: {event.room}</div>
           </div>
         </div>
       );
