@@ -23,17 +23,20 @@ class EventForm extends Component {
 
   render() {
     return (
-      <div style={{ textAlign: "center" }}>
-        <form onSubmit={this.props.handleSubmit(this.props.onEventSubmit)}>
-          {this.renderFields()}
+      <div className="card" style={{ textAlign: "center" }}>
+        <div className="card-content">
+          <h2>Enter a new training meeting</h2>
+          <form onSubmit={this.props.handleSubmit(this.props.onEventSubmit)}>
+            {this.renderFields()}
 
-          <Link to="/">
-            <button className="button-red"> Cancel</button>
-          </Link>
-          <button type="submit" className="button-blue">
-            Review
-          </button>
-        </form>
+            <Link to="/">
+              <button className="button-red"> Cancel</button>
+            </Link>
+            <button type="submit" className="button-blue">
+              Review
+            </button>
+          </form>
+        </div>
       </div>
     );
   }

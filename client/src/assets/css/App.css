@@ -11,6 +11,11 @@
   transition: 0.3s;
 }
 
+.card-content {
+  padding: 24px;
+  border-radius: 0 0 2px 2px;
+}
+
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -25,7 +30,6 @@
   color: red;
 }
 
-<<<<<<< HEAD
 .button-green,
 .button-blue,
 .button-red {
@@ -46,5 +50,3 @@
 .button-red {
   background: rgb(202, 60, 60); /* this is a maroon */
 }
-=======
->>>>>>> 37c808c40744764b3a77119962292d1b01fb4f9f
