@@ -21,15 +21,12 @@ const EventFormReview = ({ onCancel, formValues, submitEvent, history }) => {
     <div>
       <h5>Please confirm your entires</h5>
       {reviewFields}
-      <button
-        className="yellow darken-3 white-text btn-flat"
-        onClick={onCancel}
-      >
+      <button className="button-red" onClick={onCancel}>
         Back
       </button>
       <button
         onClick={() => submitEvent(formValues, history)}
-        className="green btn-flat right white-text"
+        className="button-green"
       >
         Submit Event
       </button>

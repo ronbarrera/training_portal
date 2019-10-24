@@ -27,10 +27,10 @@ class EventForm extends Component {
         <form onSubmit={this.props.handleSubmit(this.props.onEventSubmit)}>
           {this.renderFields()}
 
-          <Link to="/" className="red btn-flat white-text">
-            Cancel
+          <Link to="/">
+            <button className="button-red"> Cancel</button>
           </Link>
-          <button type="submit" className="teal btn-flat right white-text">
+          <button type="submit" className="button-blue">
             Review
           </button>
         </form>
@@ -43,7 +43,7 @@ function validate(values) {
   const errors = {};
 
   _.each(formFields, ({ name }) => {
-    if (!values[name] && name != "description") {
+    if (!values[name] && name !== "description") {
       errors[name] = "You must provide a value";
     }
   });
