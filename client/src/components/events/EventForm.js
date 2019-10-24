@@ -6,34 +6,7 @@ import EventField from "./EventField";
 import { Link } from "react-router-dom";
 import formFields from "./formFields";
 
-import moment from "moment";
-
-const format = "h:mm a";
-
-const departments = ["Engineering", "Information Technology", "Product"];
-const defaultDepartment = departments[0];
-
 class EventForm extends Component {
-  state = {
-    startDate: new Date(),
-    value: moment()
-  };
-  handleChange = date => {
-    this.setState({
-      startDate: date
-    });
-  };
-
-  handleValueChange = value => {
-    this.setState({ value });
-  };
-
-  clear = () => {
-    this.setState({
-      value: undefined
-    });
-  };
-
   renderFields() {
     return _.map(formFields, ({ label, name }) => {
       return (
@@ -49,8 +22,6 @@ class EventForm extends Component {
   }
 
   render() {
-    const { value } = this.state;
-
     return (
       <div style={{ textAlign: "center" }}>
         <form onSubmit={this.props.handleSubmit(this.props.onEventSubmit)}>

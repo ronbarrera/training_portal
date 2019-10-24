@@ -8,6 +8,8 @@ class EventList extends Component {
   }
 
   renderEvents() {
+    console.log("this is events " + this.props.events);
+
     return this.props.events.reverse().map(event => {
       return (
         <div className="card" key={event._id}>

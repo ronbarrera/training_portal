@@ -5,7 +5,6 @@ import * as actions from "../actions";
 import "../assets/css/App.css";
 
 import Landing from "./Landing";
-import Header from "./Header";
 import EventNew from "./events/EventNew";
 
 class App extends Component {
@@ -18,7 +17,7 @@ class App extends Component {
         <BrowserRouter>
           <div className="container">
             <Route exact path="/" component={Landing} />
-            <Route path="/new" component={EventNew} />
+            <Route exact path="/new" component={EventNew} />
           </div>
         </BrowserRouter>
       </div>
