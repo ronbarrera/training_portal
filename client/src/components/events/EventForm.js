@@ -6,7 +6,6 @@ import EventField from "./EventField";
 import EventField2 from "./EventField2";
 import { Link } from "react-router-dom";
 import formFields from "./formFields";
-import DateTimePicker from "react-widgets/lib/DateTimePicker";
 
 class EventForm extends Component {
   renderFields() {
